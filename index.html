@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Outubro Rosa</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="imagex/png" href="IMAGENS/okl.png">
+</head>
+
+<body>
+
+  <script>
+    $('.nav a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top;
+
+      $('html, body').animate({
+        scrollTop: targetOffset - 100
+      }, 500);
+    });
+  </script>
+
+  <header>
+    <img src="IMAGENS/banner.png" alt="Outubro rosa">
+    <ul>
+      <li><a href="DOE/doe.html"><button>Doe</button></a></li>
+      <li><a href="#campanha"><button>Campanha</button></a></li>
+      <li><a href="#agenda"><button>Agenda</button></a></li>
+      <li><a href="#sobre"><button>Sobre</button></a></li>
+      <li><a href="#previnase"><button>Previna-se!</button></a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="banner">
+      <section class="lute">
+        <h1>Lute</h1>
+        <h1>Pela</h1>
+        <h1 class="rosa">Vida.</h1>
+        <h2><span class="rosa">Outubro rosa:</span> mês da prevenção ao câncer de mama.</h2>
+      </section>
+      <section class="video">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/BCptskEYIR8?si=1oHvBDAK9uz57ttP"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </section>
+    </div>
+
+    <h3 id="campanha">Campanha Outubro Rosa</h3>
+
+    <div class="divisao">
+    </div>
+
+    <p>O mês de Outubro já é conhecido mundialmente como um mês marcado por ações afirmativas relacionadas à prevenção e
+      diagnóstico precoce do câncer de mama. O movimento, conhecido como Outubro Rosa, é celebrado anualmente desde os
+      anos 90. O objetivo da campanha é compartilhar informações sobre o câncer de mama e, mais recentemente, câncer do
+      colo do útero, promovendo a conscientização sobre as doenças, proporcionando maior acesso aos serviços de
+      diagnóstico e contribuindo para a redução da mortalidade.
+    </p>
+
+    <h3 id="agenda">Agenda</h3>
+
+    <div class="divisao">
+    </div>
+
+    <h4><span class="rosa">Semana 1</span>: 1º de outubro a 7 de outubro</h4>
+
+    <h5>1 de outubro - Abertura Oficial</h5>
+
+    <p class="evento">Local: Praça Santos Andrade</p>
+    <p class="evento">Descrição: Uma cerimônia de abertura com a iluminação cor-de-rosa do Palácio Avenida, discursos
+      inspiradores e uma caminhada simbólica pela conscientização.</p>
+
+    <h5>3 de outubro - Workshop de Prevenção</h5>
+
+    <p class="evento">Local: Hospital Oncológico de Curitiba</p>
+    <p class="evento">Descrição: Um workshop informativo sobre a importância da prevenção do câncer de mama, incluindo
+      dicas de autoexame
+      e estilo de vida saudável.</p>
+
+    <h4><span class="rosa">Semana 2</span>: 8 de outubro a 14 de outubro</h4>
+
+    <h5>10 de outubro - Corrida Rosa</h5>
+
+    <p class="evento">Local: Parque Barigui</p>
+    <p class="evento">Descrição: Uma corrida de 5 km para arrecadar fundos para organizações de combate ao câncer de
+      mama, com todos os
+      participantes vestindo rosa.</p>
+
+    <h5>12 de outubro - Dia das Mães e Filhas</h5>
+
+    <p class="evento">Local: Centro Comunitário de Curitiba</p>
+    <p class="evento">Descrição: Um evento especial que celebra o relacionamento entre mães e filhas, com palestras
+      sobre a importância do
+      apoio mútuo e da detecção precoce.</p>
+
+    <h4><span class="rosa">Semana 3</span>: 15 de outubro a 21 de outubro</h4>
+
+    <h5>18 de outubro - Exames Gratuitos de Mamografia</h5>
+
+    <p class="evento">Local: Clínica de Saúde da Mulher</p>
+    <p class="evento">Descrição: Um dia de exames gratuitos de mamografia para mulheres de baixa renda, com o apoio de
+      profissionais de
+      saúde voluntários.</p>
+
+    <h5>20 de outubro - Noite de Arte Rosa</h5>
+
+    <p class="evento">Local: Galeria de Arte Curitiba</p>
+    <p class="evento">Descrição: Uma exposição de arte com obras de artistas locais que abordam o tema do câncer de
+      mama, com parte da
+      venda das obras destinada a instituições de apoio.</p>
+
+    <h4><span class="rosa">Semana 4</span>: 22 de outubro a 28 de outubro</h4>
+
+    <h5>24 de outubro - Palestra de Conscientização</h5>
+
+    <p class="evento">Local: Teatro Guaíra</p>
+    <p class="evento">Descrição: Uma palestra educativa com especialistas em oncologia, compartilhando informações sobre
+      o câncer de mama
+      e a importância da detecção precoce.</p>
+
+    <h5>27 de outubro - Encerramento e Caminhada Rosa</h5>
+
+    <p class="evento">Local: Passeio Público</p>
+    <p class="evento">Descrição: Uma caminhada final para encerrar o mês de conscientização, com música ao vivo,
+      atividades para crianças
+      e distribuição de materiais informativos.</p>
+
+    <h3 id="sobre">Sobre: A luta <span class="rosa">rosa</span></h3>
+
+    <div class="divisao">
+    </div>
+
+    <p>A história do Outubro Rosa começa no início dos anos 1990, nos Estados Unidos, e é inspirada nos movimentos de
+      luta contra a Aids. A origem da cor tem a ver com a origem do laço, símbolo de ambas as campanhas: Nancy Brinker
+      perdeu sua irmã Susan para o câncer de mama e após ter visto o ator Jeremy Irons usar um laço vermelho – ele
+      chamava a atenção para a Aids – no terno durante uma premiação, inspirou-se para criar o que viria se tornar a
+      marca de uma luta.</p>
+    <p>A ideia de Nancy, de usar rosa, se explica, pois esta já era uma cor associada à mulher e também por trazer a
+      positividade que as flores rosas têm. A rosa é bonita, impetuosa e sempre firme, assim como é a mulher que luta
+      contra o câncer de mama.
+    </p>
+    <p>A primeira vez que o laço apareceu foi na primeira Corrida pela Cura, no ano de 1991, em Nova York, Estados
+      Unidos. Contudo foi somente em 1997 que alguns estados americanos passaram a se enfeitar de laços rosa durante o
+      mês de outubro em favor da conscientização e empresas começaram a difundir a ideia.
+    </p>
+    <p>As corridas acontecem até hoje em Nova York e todos os anos são distribuídos, para as corredoras e para o
+      público, laços rosa e panfletos informativos. Assim, a campanha ganhou todo o mundo e apareceu pela primeira vez
+      no Brasil em 2002.
+    </p>
+
+    <h3 id="previnase"><span class="rosa">Câncer de Mama:</span> Como se prevenir</h3>
+
+    <div class="divisao">
+    </div>
+
+    <p>O câncer de mama é o tipo de câncer mais comum em mulheres, e o segundo tipo mais comum de câncer em geral. A
+      doença afeta, principalmente, mulheres mais velhas, no entanto, pode afetar mulheres de qualquer idade.
+      Felizmente,
+      existem várias maneiras de ser prevenir do câncer de mama. Abaixo listamos algumas recomendações para a prevenção
+      do câncer:</p>
+    <p>Para prevenir o câncer de mama, é essencial adotar um estilo de vida saudável, incluindo a prática regular de
+      exercícios, uma dieta equilibrada, a manutenção de um peso saudável e a limitação do consumo de álcool. Além
+      disso, conhecer seus fatores de risco pessoais, como histórico familiar e genética, pode ajudar a direcionar a
+      prevenção.</p>
+    <p>Fazer regularmente o exame de mamografia e outros exames como ultrassom mamário, pode ajudar a detectar o câncer
+      de mama em estágio inicial, quando as chances de cura são bem maiores. A indicação médica é que mulheres a partir
+      dos 40 anos devem realizar esses exames anualmente para se prevenir do câncer de mama.</p>
+    <p>O uso de hormônios, como a terapia de reposição hormonal (TRH) e o controle da natalidade, pode aumentar os risco
+      da doença. A reposição combinada e contínua pode aumentar em até duas vezes as chances de desenvolver câncer de
+      mama. Portanto, lembre-se de fazer um acompanhamento médico regular e se informe sobre esse tipo de tratamento e
+      dos riscos para a sua saúde. A prevenção e a detecção precoce são cruciais para melhorar as perspectivas de
+      tratamento do câncer de mama.</p>
+
+  </main>
+
+  <footer>
+    <img src="IMAGENS/seloqualidade.png">
+
+    <p>2°A 2023© - Todos os direitos reservados.</p>
+
+    <p>Contatos:</p>
+
+    <ul>
+      <li><a href="https://wa.me/5541996546061" target="_blank">Tel: <span style="text-decoration: underline"><span
+              style="color: blue">(41)
+              99654-6061</span></span></a></li>
+      <li><a href="mailto:augusto.felipe@escola.pr.gov.br">Email: <span style="text-decoration: underline"><span
+              style="color: blue">augusto.felipe@escola.pr.gov.br</span></span></a></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>
