@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Começo do Header*/
+
+header {
+  width: 100%;
+  height: 7em;
+  display: flex;
+  background-color: pink;
+}
+
+header img {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 2em;
+  top: 0.5em;
+}
+
+header ul {
+  display: flex;
+  position: absolute;
+  right: 1em;
+  top: 1.25em;
+}
+
+header li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+header button {
+  width: 110px;
+  height: 45px;
+  border: solid hotpink 1px;
+  border-radius: 8px;
+  background-color: inherit;
+  color: white;
+  font-size: 16px;
+}
+
+header button:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+/*Fim do Header*/
+
+/*Começo do Main*/
+
+main h1 {
+  font-size: 7em;
+  margin: 10px 100px;
+}
+
+main h2 {
+  margin: 0 100px;
+  font-size: 2em;
+}
+
+main h3 {
+  font-size: 4em;
+  margin: 10px 100px;
+}
+
+main h4 {
+  font-size: 2em;
+  margin: 50px 100px 0 100px;
+}
+
+main h5::before {
+  content: "→ ";
+  color: deeppink;
+}
+
+main h5 {
+  font-size: 1.5em;
+  margin: 30px 100px 30px 100px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.evento {
+  font-size: 1.3em;
+  margin: 0 130px;
+}
+
+main p {
+  font-size: 1.5em;
+  margin: 50px 100px;
+  text-align: justify;
+}
+
+main section {
+  margin: 60px 0;
+}
+
+.banner {
+  display: flex;
+}
+
+.rosa {
+  color: deeppink;
+}
+
+.video {
+  margin-right: 100px;
+}
+
+.divisao {
+  width: 90%;
+  height: 2px;
+  background-color: hotpink;
+  margin: auto;
+}
+
+/*Fim do Main*/
+
+/*Começo do Footer*/
+
+footer {
+  display: flex;
+  background-color: pink;
+  padding: 5px;
+}
+
+footer img {
+  height: 70px;
+  width: 70px;
+}
+
+footer p {
+  font-size: 20px;
+  margin: auto 5px auto 150px;
+}
+
+footer ul {
+  list-style: none;
+  margin: auto 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Fim do Footer*/
