@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Outubro Rosa</title>
+  <link href="doe.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="imagex/png" href="../IMAGENS/okl.png">
+  <script type="text/javascript">
+    function slide1() {
+      document.getElementById('id').src = "../IMAGENS/passeata1.jpeg";
+      setTimeout("slide2()", 10000)
+    }
+
+    function slide2() {
+      document.getElementById('id').src = "../IMAGENS/toque.jpg";
+      setTimeout("slide3()", 10000)
+    }
+
+    function slide3() {
+      document.getElementById('id').src = "../IMAGENS/passeata2.jpeg";
+      setTimeout("slide1()", 10000)
+    }
+  </script>
+</head>
+
+<body onLoad="slide1()">
+
+  <script>
+    $('.nav a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top;
+
+      $('html, body').animate({
+        scrollTop: targetOffset - 100
+      }, 500);
+    });
+  </script>
+
+  <header>
+    <a href="../index.html"><img src="../IMAGENS/banner.png" alt="Outubro rosa"></a>
+    <ul>
+      <li><a href="doe.html"><button>Doe</button></a></li>
+      <li><a href="../index.html"><button>Campanha</button></a></li>
+      <li><a href="../index.html"><button>Agenda</button></a></li>
+      <li><a href="../index.html"><button>Sobre</button></a></li>
+      <li><a href="../index.html"><button>Previna-se!</button></a></li>
+    </ul>
+  </header>
+
+  <main>
+
+    <h1>Conheça a campanha <span class="rosa">Outubro Rosa:</span></h1>
+    <div class="divisao">
+    </div>
+    <img id="id">
+    <p>Graças as doações de pessoas generosas que simpatizam com a campanha outubro rosa, conseguimos organizar as
+      passeatas, as corridas, os workshops e providenciar os exames de mamografia gratuitos para centenas de mulheres
+      paranaenses!</p>
+    <p>Você pode nos ajudar com doações de:</p>
+    <p class="listinha">Lenços;</p>
+    <p class="listinha">Dinheiro;</p>
+    <p class="listinha">Ajuda voluntária.</p>
+    <p>Caso tenha interesse em doar para o movimento, entre em contato conosco!</p>
+    <h2>Contatos</h2>
+    <p class="listinha"><a href="https://wa.me/5541996546061" target="_blank">Whatsapp: 41 99654-6061</a></p>
+    <p class="listinha">Email: augusto.felipe@escola.pr.gov.br</p>
+    <p class="listinha">Pix: 41 99654-6061</p>
+
+  </main>
+
+  <footer>
+    <img src="../IMAGENS/seloqualidade.png">
+
+    <p>2°A 2023© - Todos os direitos reservados.</p>
+
+    <p>Contatos:</p>
+
+    <ul>
+      <li><a href="https://wa.me/5541996546061" target="_blank">Tel: <span style="text-decoration: underline"><span
+              style="color: blue">(41)
+              99654-6061</span></span></a></li>
+      <li><a href="mailto:augusto.felipe@escola.pr.gov.br">Email: <span style="text-decoration: underline"><span
+              style="color: blue">augusto.felipe@escola.pr.gov.br</span></span></a></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>
